@@ -1,0 +1,100 @@
+body {
+	background: url(../img/bg.png);
+}
+
+.header-top {
+	height: 5px;
+	background: #878988;
+	border-top: 1px solid #494949;
+	border-bottom: 1px solid #def0f9;
+}
+
+.header-mid {
+	height: 194px;
+	background-image: -ms-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
+  	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C1E0F0), to(rgba(255,255,255,0)));
+  	background-image: -webkit-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
+  	background-image: -o-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
+  	background-image: linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
+  	background-image: -moz-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
+  	background-repeat: repeat-x;
+  	overflow: hidden;
+}
+
+.header-bottom {
+	height: 5px;
+	background: #f7a3a3;
+	border-top: 1px solid #e68e91;
+	border-bottom: 1px solid #fff;
+}
+
+.sunburst {
+	position: relative;
+	top: -650px;
+	left: -550px;
+	width: 1500px;
+	height: 1500px;
+	background: url(../img/sunburst.png);
+	-moz-animation:spin 100s infinite linear;
+	-webkit-animation:spin 100s infinite linear;
+}
+
+a.logo {
+	display: block;
+	position: absolute;
+	top: 20px;
+	width: 365px;
+	height: 145px;
+	background: url(../img/logo.png);
+}
+
+a:hover.logo {
+	-moz-animation:shrink 0.5s;
+	-webkit-animation:shrink 0.5s;
+}
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -21px;
+}
+.sticky-footer, .push {
+	height: 21px;
+	clear: both;
+}
+
+.footer {
+	height: 20px;
+	padding: 0 10px;
+	background: #464646;
+	color: #ccc;
+	font-size: 11px;
+	border-top: 1px solid #fff;
+	line-height: 20px;
+}
+
+@-moz-keyframes spin {
+	from { -moz-transform:rotate(0deg); }
+	to { -moz-transform:rotate(360deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform:rotate(0deg); }
+	to { -webkit-transform:rotate(360deg); }
+}
+@-moz-keyframes shrink {
+	0% { -moz-transform:scale(1); }
+	50% { -moz-transform:scale(0.8); }
+	100% { -moz-transform:scale(1); }
+}
+@-webkit-keyframes shrink {
+	0% { -webkit-transform:scale(1); }
+	50% { -webkit-transform:scale(0.8); }
+	100% { -webkit-transform:scale(1); }
+}

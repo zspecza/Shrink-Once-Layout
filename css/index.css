@@ -30,7 +30,7 @@ body {
 
 .sunburst {
 	position: relative;
-	top: -650px;
+	top: -700px;
 	left: -550px;
 	width: 1500px;
 	height: 1500px;
@@ -48,9 +48,21 @@ a.logo {
 	background: url(../img/logo.png);
 }
 
-a:hover.logo {
+.animate-logo {
+	display: block;
+	position: absolute;
+	top: 0px;
+	width: 365px;
+	height: 145px;
+	width: 365px;
+	height: 200px;
+}
+
+.animate-logo:hover a.logo {
 	-moz-animation:shrink 0.5s;
 	-webkit-animation:shrink 0.5s;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
 }
 
 * {
@@ -90,11 +102,9 @@ html, body {
 }
 @-moz-keyframes shrink {
 	0% { -moz-transform:scale(1); }
-	50% { -moz-transform:scale(0.6); }
-	100% { -moz-transform:scale(1); }
+	100% { -moz-transform:scale(0.6); }
 }
 @-webkit-keyframes shrink {
 	0% { -webkit-transform:scale(1); }
-	50% { -webkit-transform:scale(0.6); }
-	100% { -webkit-transform:scale(1); }
+	100% { -webkit-transform:scale(0.6); }
 }

@@ -90,11 +90,11 @@ html, body {
 }
 @-moz-keyframes shrink {
 	0% { -moz-transform:scale(1); }
-	50% { -moz-transform:scale(0.8); }
+	50% { -moz-transform:scale(0.6); }
 	100% { -moz-transform:scale(1); }
 }
 @-webkit-keyframes shrink {
 	0% { -webkit-transform:scale(1); }
-	50% { -webkit-transform:scale(0.8); }
+	50% { -webkit-transform:scale(0.6); }
 	100% { -webkit-transform:scale(1); }
 }

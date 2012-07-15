@@ -1,5 +1,6 @@
 body {
 	background: url(../img/bg.png);
+	overflow-x: hidden;
 }
 
 .header-top {
@@ -30,7 +31,7 @@ body {
 	position: relative;
 	top: -1900px;
 	left: -80px;
-	background: url(../img/mountains-fg.png) repeat-x;
+	background: url(../img/mountains-fg.png) no-repeat;
 	height: 200px;
 	width: 800px;
 }
@@ -44,6 +45,7 @@ body {
 
 .clouds {
 	padding: 100px 0;
+
 }
 
 .cloud-x1 {
@@ -74,6 +76,26 @@ body {
 	-webkit-animation: moveclouds 55s linear infinite;
 	-moz-animation: moveclouds 55s linear infinite;
 	-o-animation: moveclouds 55s linear infinite;
+}
+
+.cloud-x4 {
+	position: absolute; top: 50px; left: 60px;
+	width: 180px;
+	height: 180px;
+	background: url(../img/cloud-x3.png) no-repeat;
+	-webkit-animation: moveclouds 75s linear infinite;
+	-moz-animation: moveclouds 75s linear infinite;
+	-o-animation: moveclouds 75s linear infinite;
+}
+
+.cloud-x5 {
+	position: absolute; top: 5px; left: -100px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/cloud-x2.png) no-repeat;
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
 }
 
 .sunburst {
@@ -157,14 +179,14 @@ html, body {
 	to { -webkit-transform:rotate(360deg); }
 }
 @-webkit-keyframes moveclouds {
-	0% {margin-left: 1000px;}
+	0% {margin-left: 2000px;}
 	100% {margin-left: -1000px;}
 }
 @-moz-keyframes moveclouds {
-	0% {margin-left: 1000px;}
+	0% {margin-left: 2000px;}
 	100% {margin-left: -1000px;}
 }
 @-o-keyframes moveclouds {
-	0% {margin-left: 1000px;}
+	0% {margin-left: 2000px;}
 	100% {margin-left: -1000px;}
 }

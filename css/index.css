@@ -10,7 +10,7 @@ body {
 }
 
 .header-mid {
-	height: 194px;
+	height: 186px;
 	background-image: -ms-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
   	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#C1E0F0), to(rgba(255,255,255,0)));
   	background-image: -webkit-linear-gradient(top, #C1E0F0, rgba(255,255,255,0));
@@ -22,16 +22,17 @@ body {
 }
 
 .mountains-bg {
-	background:url(../img/mountains.png) repeat-x;
+	background: url(../img/mountains.png) repeat-x;
 	height: 200px;
 }
 
 .mountains-fg {
-	position: absolute;
-	top: 0;
-	left: 0;
-	background:url(../img/mountains-fg.png) repeat-x;
+	position: relative;
+	top: -1900px;
+	left: -80px;
+	background: url(../img/mountains-fg.png) repeat-x;
 	height: 200px;
+	width: 800px;
 }
 
 .header-bottom {

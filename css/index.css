@@ -28,9 +28,43 @@ body {
 	border-bottom: 1px solid #fff;
 }
 
+.clouds {
+	padding: 100px 0;
+}
+
+.cloud-x1 {
+	position: absolute; top: -10px; left: 20px;
+	width: 100px;
+	height: 100px;
+	background: url(../img/cloud-x1.png) no-repeat;
+	-webkit-animation: moveclouds 35s linear infinite;
+	-moz-animation: moveclouds 35s linear infinite;
+	-o-animation: moveclouds 35s linear infinite;
+}
+
+.cloud-x2 {
+	position: absolute; top: 10px; left: -200px;
+	width: 150px;
+	height: 150px;
+	background: url(../img/cloud-x2.png) no-repeat;
+	-webkit-animation: moveclouds 45s linear infinite;
+	-moz-animation: moveclouds 45s linear infinite;
+	-o-animation: moveclouds 45s linear infinite;
+}
+
+.cloud-x3 {
+	position: absolute; top: 30px; left: -15px;
+	width: 180px;
+	height: 180px;
+	background: url(../img/cloud-x3.png) no-repeat;
+	-webkit-animation: moveclouds 55s linear infinite;
+	-moz-animation: moveclouds 55s linear infinite;
+	-o-animation: moveclouds 55s linear infinite;
+}
+
 .sunburst {
 	position: relative;
-	top: -700px;
+	top: -780px;
 	left: -550px;
 	width: 1500px;
 	height: 1500px;
@@ -46,6 +80,10 @@ a.logo {
 	width: 365px;
 	height: 145px;
 	background: url(../img/logo.png);
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
 }
 
 .animate-logo {
@@ -59,10 +97,14 @@ a.logo {
 }
 
 .animate-logo:hover a.logo {
-	-moz-animation:shrink 0.5s;
+	-webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+	/* -moz-animation:shrink 0.5s;
 	-webkit-animation:shrink 0.5s;
 	-moz-animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards; */
 }
 
 * {
@@ -100,11 +142,15 @@ html, body {
 	from { -webkit-transform:rotate(0deg); }
 	to { -webkit-transform:rotate(360deg); }
 }
-@-moz-keyframes shrink {
-	0% { -moz-transform:scale(1); }
-	100% { -moz-transform:scale(0.6); }
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
 }
-@-webkit-keyframes shrink {
-	0% { -webkit-transform:scale(1); }
-	100% { -webkit-transform:scale(0.6); }
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
 }

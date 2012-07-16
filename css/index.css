@@ -98,6 +98,18 @@ body {
 	-o-animation: moveclouds 25s linear infinite;
 }
 
+.zeppelin {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+	height: 200px;
+	background: url(../img/zeppelin.png) no-repeat;
+	-webkit-animation: zeppelin 70s linear infinite;
+	-moz-animation: zeppelin 70s linear infinite;
+	-o-animation: zeppelin 70s linear infinite;
+}
+
 .sunburst {
 	position: relative;
 	top: -980px;
@@ -189,4 +201,16 @@ html, body {
 @-o-keyframes moveclouds {
 	0% {margin-left: 2000px;}
 	100% {margin-left: -1000px;}
+}
+@-webkit-keyframes zeppelin {
+	0% {margin-left: -1000px;}
+	100% {margin-left: 2000px;}
+}
+@-moz-keyframes zeppelin {
+	0% {margin-left: -1000px;}
+	100% {margin-left: 2000px;}
+}
+@-o-keyframes zeppelin {
+	0% {margin-left: -1000px;}
+	100% {margin-left: 2000px;}
 }

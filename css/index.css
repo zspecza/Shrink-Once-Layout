@@ -23,6 +23,10 @@ h1 {
 	text-transform: uppercase;
 }
 
+.header-overflow-fix {
+	overflow: hidden;
+}
+
 .well h1 {
 	text-align: center;
 }
@@ -33,6 +37,12 @@ h1 {
 
 .main-page.well {
 	min-height: 350px;
+}
+
+.well iframe {
+	position: relative;
+	left: 50%;
+	margin-left: -200px;
 }
 
 .header-top {
@@ -73,7 +83,6 @@ h1 {
 	background: #f7a3a3;
 	border-top: 1px solid #e68e91;
 	border-bottom: 1px solid #fff;
-	margin-bottom: 20px;
 }
 
 .clouds {
@@ -86,9 +95,9 @@ h1 {
 	width: 100px;
 	height: 100px;
 	background: url(../img/cloud-x1.png) no-repeat;
-	-webkit-animation: moveclouds 35s linear infinite;
-	-moz-animation: moveclouds 35s linear infinite;
-	-o-animation: moveclouds 35s linear infinite;
+	-webkit-animation: moveclouds 75s linear infinite;
+	-moz-animation: moveclouds 75s linear infinite;
+	-o-animation: moveclouds 75s linear infinite;
 }
 
 .cloud-x2 {
@@ -96,9 +105,9 @@ h1 {
 	width: 150px;
 	height: 150px;
 	background: url(../img/cloud-x2.png) no-repeat;
-	-webkit-animation: moveclouds 45s linear infinite;
-	-moz-animation: moveclouds 45s linear infinite;
-	-o-animation: moveclouds 45s linear infinite;
+	-webkit-animation: moveclouds 85s linear infinite;
+	-moz-animation: moveclouds 85s linear infinite;
+	-o-animation: moveclouds 85s linear infinite;
 }
 
 .cloud-x3 {
@@ -126,9 +135,9 @@ h1 {
 	width: 150px;
 	height: 150px;
 	background: url(../img/cloud-x2.png) no-repeat;
-	-webkit-animation: moveclouds 25s linear infinite;
-	-moz-animation: moveclouds 25s linear infinite;
-	-o-animation: moveclouds 25s linear infinite;
+	-webkit-animation: moveclouds 95s linear infinite;
+	-moz-animation: moveclouds 95s linear infinite;
+	-o-animation: moveclouds 95s linear infinite;
 }
 
 .zeppelin {
@@ -160,7 +169,7 @@ a.logo {
 	top: 20px;
 	width: 365px;
 	height: 145px;
-	background: url(../img/logo.png);
+	background: url(../img/logo.png) no-repeat;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -171,8 +180,6 @@ a.logo {
 	display: block;
 	position: absolute;
 	top: 0px;
-	width: 365px;
-	height: 145px;
 	width: 365px;
 	height: 200px;
 }

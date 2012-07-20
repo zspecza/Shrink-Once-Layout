@@ -6,23 +6,17 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/bootstrap.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="container-fluid">
 			<div class="row-fluid">
     		<header>
-    			<div class="header-top"></div>
     			<div class="header-mid">
     				<div class="mountains-bg"></div>
     				<div class="clouds">
     					<div class="sunburst"></div>
-    					<div class="cloud-x1"></div>
-    					<div class="cloud-x2"></div>
-    					<div class="cloud-x3"></div>
-    					<div class="zeppelin"></div>
-    					<div class="cloud-x4"></div>
-    					<div class="cloud-x5"></div>
     				</div>
     				<div class="mountains-fg"></div>
     						<div class="span6">
@@ -39,10 +33,12 @@
   						<div class="navbar-inner">
    							<div class="container">
    								<ul class="nav">
-    								<li><a href="#">Login!</a></li>
-    								<li><a href="#">Join!</a></li>
-    								<li><a href="#">Discussion!</a></li>
-    								<li><a href="#">Make Contact!</a></li>
+    								<li><a href="#">Home</a></li>
+    								<li><a href="#">About</a></li>
+    								<li><a href="#">How it works</a></li>
+    								<li><a href="#">Forums</a></li>
+    								<li><a href="#">Sign Up</a></li>
+    								<li><a href="#">Log In</a></li>
     							</ul>
     						</div>
   						</div>
@@ -50,27 +46,21 @@
     		</header>
     	</div>
     		<div class="row-fluid">
-    			<div class="main-page well span4">
-    				<h1>We make your wallet <span>happy</span>.</h1>
-    				<br />
-    				<p>And who in their right mind would turn down a happy wallet?</p>
-    				<p>Shrink Once is a link shortener. We don't actually shorten your link (after all, what kind of evil website would we be if we did?), but we <i>do</i> make you money, and <i>lots of it</i>.</p>
-    				<p>Just give us your links, and we'll lock them with a survey. Then it's your job to get people to complete those surveys, so you can earn yourself some well-deserved dough. You can also earn 10% of your referral commissions.</p>
-    				<p><a href="#">Find out more about how it all works.</a></p>
-    				<p>Oh yeah, did we mention we have <i>instant payments?</i> Our staff will totally love you if you use these to buy them a beer.</p>
+    			<div class="span6">
+    				<h1 class="intro-title">We make your wallet <span>happy</span>.</h1>
+    				<div class="intro-body">
+    					<p>We're everything you look for in a pay-per-click service. But here at Shrink Once, we do things a little differently. We allow you to lock your links with a survey, meaning you can earn way more with us than you would with our competitors - and we do this because we love you.</p>
+    					<p>Really. We do. We love you so much we've even noticed that your wallet is empty more often than you want it to be. But you don't want it to be empty, sad and alone. You want it to be filled with money. We aim to remedy your upset, empty wallet and make it a happy one - by helping you give it some monetary friends.</p>
+    				</div>
+    				<div class="buttons">
+    					<a class="button fuschia" href="#">Sign Up</a>
+    					<a class="button fuschia" href="#">More Info</a>
+    					<a class="button fuschia" href="#">Blog</a>
+    					<a class="button fuschia" href="#">API</a>
+    				</div>
     			</div>
-    			<div class="main-page well span4">
-    				<h1>Look at us <span>dancing</span>!</h1>
-    				<br />
-    				<p>We're kidding. We don't really dance. We're terrible. But you can, and most likely will, once you find out how much money Shrink Once will make you.</p>
-    				<p>You see, that's our goal. To enable you to make money online without a fuss. Our competitors make it hard (that's what she said), but you don't want hard, you want easy. We want to make it easy - just for you!</p>
-    				<p>So what are you waiting for? We've got big "Login!" and "Join!" buttons, and we've made them really big and noticeable (again, just for you). So go ahead and click that "Join!" button now.</p>
-    				<p>What are you waiting for?</p>
-    			</div>
-    			<div class="main-page well span4 video">
-    				<h1>Watch our <span>video</span>!</h1>
-    				<br />
-    				<iframe src="http://player.vimeo.com/video/28943818?title=0&amp;byline=0&amp;portrait=0&amp;color=f7a3a3" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    			<div class="span6">
+    				<div class="video"></div>
     			</div>
     		</div>
     	</div>
@@ -78,7 +68,15 @@
     	</div>
     	<div class="sticky-footer">
     		<div class="footer">
-    			<p>&copy Copyright 2012 Shrink Once LLC</p>
+    			<p>&copy Copyright 2012 Shrink Once LLC
+    				<span class="footerlinks">
+    					<a href="#">Blog</a> | 
+    					<a href="#">Developers</a> | 
+    					<a href="#">Terms & Conditions</a> | 
+    					<a href="#">Privacy</a> | 
+    					<a href="#">Contact</a>
+    				</span>
+    			</p>
     		</div>
     	</div>
 	</body>
